@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "build": "npm run write:env -s && ng build",
-    "start": "npm run write:env -s && ng serve --proxy-config proxy.conf.js",
+    "start": "npm run write:env -s && ng serve --proxy-config proxy.conf.js --open",
     "deploy": "npm run write:env -s && ng deploy",
     "serve:sw": "npm run build -s && npx http-server ./dist -p 4200",
     "lint": "ng lint && stylelint \"src/**/*.scss\"",
@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@angular-builders/jest": "^13.0.0",
-    "@angular-devkit/build-angular": "~13.1.0",
+    "@angular-devkit/build-angular": "^13.3.8",
     "@angular-eslint/builder": "~13.0.1",
     "@angular-eslint/eslint-plugin": "~13.0.1",
     "@angular-eslint/eslint-plugin-template": "~13.0.1",
@@ -75,7 +75,7 @@
     "eslint-plugin-import": "latest",
     "eslint-plugin-jsdoc": "latest",
     "eslint-plugin-prefer-arrow": "latest",
-    "hads": "^3.0.0",
+    "hads": "^1.1.2",
     "htmlhint": "^1.0.0",
     "https-proxy-agent": "^5.0.0",
     "husky": "^7.0.1",
@@ -86,7 +86,7 @@
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
     "protractor": "~7.0.0",
-    "puppeteer": "^12.0.1",
+    "puppeteer": "^15.1.1",
     "stylelint": "~14.1.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended-scss": "~5.0.2",
@@ -97,13 +97,11 @@
   },
   "prettier": {
     "singleQuote": true,
-    "overrides": [
-      {
-        "files": "*.scss",
-        "options": {
-          "singleQuote": false
-        }
+    "overrides": [{
+      "files": "*.scss",
+      "options": {
+        "singleQuote": false
       }
-    ]
+    }]
   }
 }
