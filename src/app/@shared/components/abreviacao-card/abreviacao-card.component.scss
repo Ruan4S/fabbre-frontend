@@ -6,7 +6,6 @@
   min-height: 170px;
   max-width: 300px;
   padding: 20px;
-  border-bottom: 2px solid transparent;
 
   position: relative;
   overflow: hidden;
@@ -46,4 +45,10 @@
   font-weight: 200;
 
   color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+  :host {
+    max-width: unset;
+  }
 }

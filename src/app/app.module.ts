@@ -18,6 +18,7 @@ import {
   SharedModule,
 } from '@shared';
 import { NgBusyModule } from 'ng-busy';
+import { NgxWebstorageModule } from 'ngx-webstorage';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
@@ -41,6 +42,11 @@ import { ShellModule } from './shell/shell.module';
       minDuration: 1000,
       template: LoaderComponent,
       disableAnimation: true,
+    }),
+    NgxWebstorageModule.forRoot({
+      caseSensitive: true,
+      prefix: 'fabbre',
+      separator: '|',
     }),
     AppRoutingModule, // must be imported as the last module as it contains the fallback route
   ],

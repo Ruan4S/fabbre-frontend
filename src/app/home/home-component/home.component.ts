@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AbreviacaoModel } from '@app/@shared/models/abreviacao.model';
-import { AbreviacoesService } from '@app/@shared/services/abreviacoes.service';
+import { AbreviacaoService } from '@app/@shared/services/abreviacoes.service';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   public abreviacoes: AbreviacaoModel[] = [];
   public busy$: Subscription[] = [];
 
-  constructor(private readonly abreviacoesService: AbreviacoesService) {}
+  constructor(private readonly abreviacoesService: AbreviacaoService) {}
 
   ngOnInit() {
     this.obterAbreviacoes();

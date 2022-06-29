@@ -12,8 +12,9 @@ import { EmailSvgComponent } from './components/svgs/email-svg/email-svg.compone
 import { LinkedinSvgComponent } from './components/svgs/linkedin-svg/linkedin-svg.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { ThemeComponent } from './components/theme/theme.component';
-import { AbreviacaoComponent } from './components/abreviacao/abreviacao.component';
+import { AbreviacaoCardComponent } from './components/abreviacao-card/abreviacao-card.component';
 import { RouterModule } from '@angular/router';
+import { ExemploComponent } from './components/exemplo/exemplo.component';
 
 @NgModule({
   imports: [FlexLayoutModule, MaterialModule, TranslateModule, CommonModule, RouterModule],
@@ -26,8 +27,9 @@ import { RouterModule } from '@angular/router';
     LinkedinSvgComponent,
     LogoComponent,
     ThemeComponent,
-    AbreviacaoComponent,
+    AbreviacaoCardComponent,
+    ExemploComponent,
   ],
-  exports: [LoaderComponent, HeaderComponent, FooterComponent, AbreviacaoComponent],
+  exports: [LoaderComponent, HeaderComponent, FooterComponent, AbreviacaoCardComponent, ExemploComponent],
 })
 export class SharedModule {}

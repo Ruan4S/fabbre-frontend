@@ -1,0 +1,48 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 250px;
+  min-height: 170px;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+
+  position: relative;
+
+  background-color: var(--color-primary);
+  filter: brightness(0.92);
+
+  &::before,
+  &::after {
+    position: absolute;
+    opacity: 0.1;
+
+    color: var(--color-secondary);
+    font-size: 4rem;
+    line-height: 2rem;
+  }
+
+  &::before {
+    content: "❝";
+    top: 16px;
+    left: 6px;
+  }
+
+  &::after {
+    content: "❞";
+    bottom: -16px;
+    right: 6px;
+  }
+}
+
+p {
+  text-align: center;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  :host {
+    max-width: unset;
+  }
+}

@@ -7,12 +7,17 @@ import { CONSTANTS } from '../constants/constants';
 @Injectable({
   providedIn: 'root',
 })
-export class AbreviacoesService {
+export class AbreviacaoService {
   private abreviacoes: AbreviacaoModel[] = abreviacoesJson;
 
   constructor() {}
 
   public obterAbreviacoes(): Observable<AbreviacaoModel[]> {
     return of(this.abreviacoes).pipe(delay(CONSTANTS.DELAY));
+  }
+
+  public obterAbreviacaoPorSlug(slug: string): Observable<AbreviacaoModel> {
+    const abreviacao = this.abreviacoes.find((abreviacao) => abreviacao.slug === slug);
+    return of(abreviacao as AbreviacaoModel);
   }
 }

@@ -14,7 +14,8 @@
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "strict": true,
+    "strict": false,
+    "strictPropertyInitialization": false,
     "suppressImplicitAnyIndexErrors": true,
     "target": "es2017",
     "typeRoots": [
@@ -26,10 +27,18 @@
     ],
     "baseUrl": "./",
     "paths": {
-      "@app/*": ["src/app/*"],
-      "@shared": ["src/app/@shared"],
-      "@shared/*": ["src/app/@shared/*"],
-      "@env/*": ["src/environments/*"]
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@shared": [
+        "src/app/@shared"
+      ],
+      "@shared/*": [
+        "src/app/@shared/*"
+      ],
+      "@env/*": [
+        "src/environments/*"
+      ]
     }
   },
   "angularCompilerOptions": {
