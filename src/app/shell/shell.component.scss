@@ -1,1 +1,5 @@
 @import "src/theme/theme-variables";
+
+:host {
+  flex: 1;
+}
