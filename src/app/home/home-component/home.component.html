@@ -1,13 +1,13 @@
 <main [ngBusy]="busy$">
   <div class="container">
-    <h1>Encontre sua abreviação</h1>
+    <h1>Encontre sua abreviatura</h1>
 
     <div class="filtros" fxLayout="row" fxLayoutGap="16px" fxLayoutAlign="center center">
       <mat-form-field>
         <input
           matInput
           type="text"
-          placeholder="Digite a abreviação"
+          placeholder="Digite a abreviatura"
           [(ngModel)]="inputPesquisaValue"
           #inputPesquisa="ngModel"
         />
