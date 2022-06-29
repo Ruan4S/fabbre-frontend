@@ -31,5 +31,6 @@ import { ExemploComponent } from './components/exemplo/exemplo.component';
     ExemploComponent,
   ],
   exports: [LoaderComponent, HeaderComponent, FooterComponent, AbreviaturaCardComponent, ExemploComponent],
+  providers: [{ provide: Window, useValue: window }],
 })
 export class SharedModule {}
