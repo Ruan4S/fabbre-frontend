@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AbreviacaoCardComponent } from './abreviacao-card.component';
+import { AbreviaturaCardComponent } from './abreviatura-card.component';
 
-describe('AbreviacaoCardComponent', () => {
-  let component: AbreviacaoCardComponent;
-  let fixture: ComponentFixture<AbreviacaoCardComponent>;
+describe('AbreviaturaCardComponent', () => {
+  let component: AbreviaturaCardComponent;
+  let fixture: ComponentFixture<AbreviaturaCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AbreviacaoCardComponent],
+      declarations: [AbreviaturaCardComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AbreviacaoCardComponent);
+    fixture = TestBed.createComponent(AbreviaturaCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
