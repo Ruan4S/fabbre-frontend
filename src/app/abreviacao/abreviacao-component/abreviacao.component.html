@@ -1,7 +1,7 @@
 <div class="container">
   <div class="titulo">
     <h1>{{ abreviacao.nome }}</h1>
-    <span>{{ abreviacao.significado }}</span>
+    <span [innerHTML]="abreviacao.significado"></span>
   </div>
 
   <p [innerHTML]="abreviacao.descricao"></p>
