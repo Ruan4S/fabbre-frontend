@@ -136,6 +136,9 @@ OTHER DEALINGS IN THE SOFTWARE.
 ng-busy
 MIT
 
+ngx-webstorage
+MIT
+
 rxjs
 Apache-2.0
                                Apache License
