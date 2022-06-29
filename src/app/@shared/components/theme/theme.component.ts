@@ -9,6 +9,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 export class ThemeComponent implements OnInit {
   public darkActive: boolean = false;
   private darkColor: string = '#131515';
+  private darkColorDec: string = '0, 0, 0';
 
   constructor(@Inject(DOCUMENT) private readonly document: Document, private window: Window) {}
 
@@ -22,9 +23,11 @@ export class ThemeComponent implements OnInit {
     if (this.darkActive) {
       this.document.documentElement.style.setProperty('--color-primary', this.darkColor);
       this.document.documentElement.style.setProperty('--color-secondary', '#FFFFFF');
+      this.document.documentElement.style.setProperty('--color-primary-dec', this.darkColorDec);
     } else {
       this.document.documentElement.style.setProperty('--color-primary', '#FFFFFF');
       this.document.documentElement.style.setProperty('--color-secondary', this.darkColor);
+      this.document.documentElement.style.setProperty('--color-primary-dec', '255, 255, 255');
     }
   }
 }

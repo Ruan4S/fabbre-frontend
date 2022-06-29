@@ -1,4 +1,4 @@
-:host {
+:host ::ng-deep {
   position: absolute;
   left: 0;
   right: 0;
@@ -10,10 +10,16 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  background: rgba($color: white, $alpha: 0.8);
+  background: rgba($color: var(--color-primary-dec), $alpha: 0.8);
+  backdrop-filter: brightness(0.8);
   z-index: 999;
-}
-.mat-progress-spinner {
-  display: inline-block;
-  vertical-align: middle;
+
+  mat-progress-spinner {
+    display: inline-block;
+    vertical-align: middle;
+
+    circle {
+      stroke: var(--color-secondary);
+    }
+  }
 }

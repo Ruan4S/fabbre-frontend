@@ -17,6 +17,8 @@ const log = new Logger('App');
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  public loading: boolean = true;
+
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
@@ -35,7 +37,7 @@ export class AppComponent implements OnInit {
     const onNavigationEnd = this.router.events.pipe(filter((event) => event instanceof NavigationEnd));
 
     // Change page title on navigation or language change, based on route data
-    merge(this.translateService.onLangChange, onNavigationEnd)
+    merge(onNavigationEnd)
       .pipe(
         map(() => {
           let route = this.activatedRoute;
@@ -53,5 +55,9 @@ export class AppComponent implements OnInit {
           this.titleService.setTitle(`${title} | Fabbre`);
         }
       });
+
+    setTimeout(() => {
+      this.loading = false;
+    }, 1000);
   }
 }
