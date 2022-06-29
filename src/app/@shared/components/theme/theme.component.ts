@@ -1,6 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, ElementRef, Inject, OnInit, Renderer2 } from '@angular/core';
-import { environment } from '@env/environment';
+import { Component, Inject, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-theme',
@@ -11,9 +10,11 @@ export class ThemeComponent implements OnInit {
   public darkActive: boolean = false;
   private darkColor: string = '#131515';
 
-  constructor(@Inject(DOCUMENT) private readonly document: Document) {}
+  constructor(@Inject(DOCUMENT) private readonly document: Document, private window: Window) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.window.matchMedia('(prefers-color-scheme: dark)').matches ? this.toggleTheme() : null;
+  }
 
   public toggleTheme() {
     this.darkActive = !this.darkActive;
