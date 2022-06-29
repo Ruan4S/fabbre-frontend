@@ -3,27 +3,80 @@
     "slug": "fyi",
     "nome": "FYI",
     "significado": "For your information",
-    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie.",
+    "descricao": "FYI é uma sigla em inglês bastante conhecida no ambiente corporativo. Significa “For Your Information ” (Para Sua Informação, em português). A expressão é usada, geralmente, ao encaminhar um e-mail e ressalta que o conteúdo é importante para quem está recebendo. A abreviação FYI ganhou duas adaptações para o português: PSI (Para Sua Informação) ou PSC (Para Seu Conhecimento).<br /><br /><small>Fonte: <a href='https://www.techtudo.com.br/noticias/2019/02/o-que-significa-fyi-entenda-siglas-comuns-nos-e-mails.ghtml' target='_blank' rel='noopener noreferrer'>Techtudo</a></small>",
     "exemplos": [
       "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M."
+      "FYI: A new study shows pictures of kittens reduce stress.",
+      "I was late for the recital, and fyi, the school was the third bus stop after the mall, not the fourth.",
+      "FYI: Link to today's policy meeting notes",
+      "FYI, for anyone who might be travelling in the downtown area. 12th street is closed because of a bad accident and traffic is really backed up. Avoid the area at all costs and find another way around."
     ]
   },
   {
     "id": 2,
+    "slug": "psc",
+    "nome": "PSC",
+    "significado": "Para seu conhecimento",
+    "descricao": "PSC (Para seu conhecimento) é uma variante da sigla em inglês FYI (For your information). A expressão é usada, geralmente, ao encaminhar um e-mail e ressalta que o conteúdo é importante para quem está recebendo. A abreviação possui também mais uma variação em português: PSI (Para sua informação).",
+    "exemplos": [
+      "PSC, a reunião de equipe de amanhã está agendada para as 10 da manhã.",
+      "PSC: Um novo estudo mostra qye imagens de gatinhos podem reduzir o stress.",
+      "Eu estava atrasado para o recital, e psc, a escola era a terceira paragem de autocarro depois do centro comercial, não a quarta.",
+      "PSC: Link para as notas da reunião política de hoje",
+      "PSC, para qualquer pessoa que possa estar no centro da cidade. A Rua 12 está fechada por causa de um acidente grave e o trânsito está realmente bloqueado. Evite a área a todo o custo e encontre outra forma de contornar o problema."
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "psi",
+    "nome": "PSI",
+    "significado": "Para sua informação",
+    "descricao": "PSI (Para sua informação) é uma variante da sigla em inglês FYI (For your information). A expressão é usada, geralmente, ao encaminhar um e-mail e ressalta que o conteúdo é importante para quem está recebendo. A abreviação possui também mais uma variação em português: PSC (Para seu conhecimento).",
+    "exemplos": [
+      "PSI, a reunião de equipe de amanhã está agendada para as 10 da manhã.",
+      "PSI: Um novo estudo mostra qye imagens de gatinhos podem reduzir o stress.",
+      "Eu estava atrasado para o recital, e psi, a escola era a terceira paragem de autocarro depois do centro comercial, não a quarta.",
+      "PSI: Link para as notas da reunião política de hoje",
+      "PSI, para qualquer pessoa que possa estar no centro da cidade. A Rua 12 está fechada por causa de um acidente grave e o trânsito está realmente bloqueado. Evite a área a todo o custo e encontre outra forma de contornar o problema."
+    ]
+  },
+  {
+    "id": 4,
     "slug": "atte",
     "nome": "ATTE",
-    "significado": "For your information",
+    "significado": "Atenciosamente | Atentamente",
     "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie.",
     "exemplos": [
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M."
+      "Pedro, você gostaria de marca uma reunião sobre o assunto para saber mais?<br/><br/>Atte.,<br> João Silva",
+      "Acharia ótimo, João! Vamos marcar para amanhã as 10hs?<br /><br />At.te,<br> Pedro Santos"
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "asap",
+    "nome": "ASAP",
+    "significado": "As soon as possible<br />(O mais cedo possível)",
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie.",
+    "exemplos": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "rsvp",
+    "nome": "RSVP",
+    "significado": "Répondez S'il Vous Plaît <br />(Responda, por favor)",
+    "descricao": "RSVP é uma abreviatura com origem francesa, que geralmente é utilizada ao final de cartas ou e-mail como forma de lembrar o destinatário para que responda o documento. Muito usado para confirmação de reuniões, eventos e outros tipos de convites.",
+    "exemplos": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
     ]
   }
 ]
