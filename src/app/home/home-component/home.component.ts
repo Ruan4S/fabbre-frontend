@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AbreviacaoModel } from '@app/@shared/models/abreviacao.model';
+import { AbreviacoesService } from '@app/@shared/services/abreviacoes.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +9,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  public abreviacoes: AbreviacaoModel[] = [];
+  public busy$: Subscription[] = [];
 
-  ngOnInit() {}
+  constructor(private readonly abreviacoesService: AbreviacoesService) {}
+
+  ngOnInit() {
+    this.obterAbreviacoes();
+  }
+
+  public obterAbreviacoes() {
+    this.busy$.push(
+      this.abreviacoesService.obterAbreviacoes().subscribe({
+        next: (result) => {
+          this.abreviacoes = result;
+        },
+      })
+    );
+  }
 }

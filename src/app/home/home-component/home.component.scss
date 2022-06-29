@@ -1,3 +1,44 @@
-:host {
+:host ::ng-deep {
+  display: block;
+  min-height: calc(100vh - 207px);
+  position: relative;
   flex: 1;
+
+  mat-form-field {
+    .mat-form-field-label {
+      opacity: 0.4;
+      font-weight: 400;
+    }
+
+    .mat-form-field-underline {
+      background-color: var(--color-secondary);
+    }
+
+    &.mat-focused {
+      .mat-form-field-ripple {
+        background-color: var(--color-secondary);
+      }
+    }
+  }
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+mat-form-field {
+  margin: 20px 0;
+  width: 100%;
+
+  input {
+  }
+}
+
+.abreviacoes {
+  gap: 1.25rem;
 }

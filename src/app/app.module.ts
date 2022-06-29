@@ -10,7 +10,14 @@ import { Angulartics2Module } from 'angulartics2';
 import { MaterialModule } from './material.module';
 
 import { environment } from '@env/environment';
-import { ApiPrefixInterceptor, ErrorHandlerInterceptor, RouteReusableStrategy, SharedModule } from '@shared';
+import {
+  ApiPrefixInterceptor,
+  ErrorHandlerInterceptor,
+  LoaderComponent,
+  RouteReusableStrategy,
+  SharedModule,
+} from '@shared';
+import { NgBusyModule } from 'ng-busy';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
@@ -30,6 +37,11 @@ import { ShellModule } from './shell/shell.module';
     ShellModule,
     HomeModule,
     Angulartics2Module.forRoot(),
+    NgBusyModule.forRoot({
+      minDuration: 1000,
+      template: LoaderComponent,
+      disableAnimation: true,
+    }),
     AppRoutingModule, // must be imported as the last module as it contains the fallback route
   ],
   declarations: [AppComponent],

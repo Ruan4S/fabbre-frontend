@@ -1,1 +1,13 @@
-<p>home works!</p>
+<main [ngBusy]="busy$">
+  <div class="container">
+    <h1>Encontre sua abreviação</h1>
+
+    <mat-form-field>
+      <input matInput type="text" placeholder="Digite a abreviação" />
+    </mat-form-field>
+
+    <div class="abreviacoes" fxLayout="row wrap" fxLayoutAlign="center start">
+      <app-abreviacao *ngFor="let abreviacao of abreviacoes" [obj]="abreviacao"></app-abreviacao>
+    </div>
+  </div>
+</main>

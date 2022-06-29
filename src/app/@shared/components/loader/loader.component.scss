@@ -1,8 +1,19 @@
+:host {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: rgba($color: white, $alpha: 0.8);
+  z-index: 999;
+}
 .mat-progress-spinner {
   display: inline-block;
   vertical-align: middle;
-}
-
-.message {
-  margin-left: 0.5em;
 }
