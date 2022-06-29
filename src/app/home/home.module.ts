@@ -9,6 +9,7 @@ import { MaterialModule } from '@app/material.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home-component/home.component';
 import { NgBusyModule } from 'ng-busy';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -17,6 +18,8 @@ import { NgBusyModule } from 'ng-busy';
     SharedModule,
     FlexLayoutModule,
     MaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
     Angulartics2Module,
     HomeRoutingModule,
     NgBusyModule,

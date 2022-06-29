@@ -4,19 +4,21 @@
   position: relative;
   flex: 1;
 
-  mat-form-field {
-    .mat-form-field-label {
-      opacity: 0.4;
-      font-weight: 400;
-    }
+  .filtros {
+    mat-form-field {
+      .mat-form-field-label {
+        opacity: 0.4;
+        font-weight: 400;
+      }
 
-    .mat-form-field-underline {
-      background-color: var(--color-secondary);
-    }
-
-    &.mat-focused {
-      .mat-form-field-ripple {
+      .mat-form-field-underline {
         background-color: var(--color-secondary);
+      }
+
+      &.mat-focused {
+        .mat-form-field-ripple {
+          background-color: var(--color-secondary);
+        }
       }
     }
   }
@@ -31,11 +33,35 @@ h1 {
   text-align: center;
 }
 
-mat-form-field {
-  margin: 20px 0;
-  width: 100%;
+.filtros {
+  mat-form-field {
+    margin: 20px 0;
+    width: 100%;
+  }
 
-  input {
+  button {
+    display: flex;
+    align-items: center;
+
+    min-width: unset;
+    line-height: unset;
+    padding: 6px;
+    gap: 6px;
+
+    font-size: 1.5rem;
+
+    &.active {
+      span {
+        font-size: 0.75rem;
+
+        small {
+          font-size: 1.5rem;
+        }
+      }
+      svg {
+        transform: rotate(180deg);
+      }
+    }
   }
 }
 

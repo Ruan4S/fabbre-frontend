@@ -13,65 +13,9 @@
     ]
   },
   {
-    "id": 1,
-    "slug": "fyi",
-    "nome": "FYI",
-    "significado": "For your information",
-    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie.",
-    "exemplos": [
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M."
-    ]
-  },
-  {
-    "id": 1,
-    "slug": "fyi",
-    "nome": "FYI",
-    "significado": "For your information",
-    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie.",
-    "exemplos": [
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M."
-    ]
-  },
-  {
-    "id": 1,
-    "slug": "fyi",
-    "nome": "FYI",
-    "significado": "For your information",
-    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie.",
-    "exemplos": [
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M."
-    ]
-  },
-  {
-    "id": 1,
-    "slug": "fyi",
-    "nome": "FYI",
-    "significado": "For your information",
-    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie.",
-    "exemplos": [
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M.",
-      "FYI, tomorrow’s staff meeting is scheduled for 10 A.M."
-    ]
-  },
-  {
-    "id": 1,
-    "slug": "fyi",
-    "nome": "FYI",
+    "id": 2,
+    "slug": "atte",
+    "nome": "ATTE",
     "significado": "For your information",
     "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie.",
     "exemplos": [
