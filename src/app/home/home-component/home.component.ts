@@ -1,8 +1,8 @@
-import { AfterViewInit, ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgModel } from '@angular/forms';
-import { AbreviacaoModel } from '@app/@shared/models/abreviacao.model';
-import { AbreviacaoService } from '@app/@shared/services/abreviacoes.service';
-import { map, Observable, of, startWith, Subscription } from 'rxjs';
+import { AbreviaturaModel } from '@app/@shared/models/abreviatura.model';
+import { AbreviaturasService } from '@app/@shared/services/abreviaturas.service';
+import { map, Observable, startWith, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -12,23 +12,23 @@ import { map, Observable, of, startWith, Subscription } from 'rxjs';
 export class HomeComponent implements OnInit {
   @ViewChild('inputPesquisa') public inputPesquisa: NgModel;
   public inputPesquisaValue: string;
-  public abreviacoes: AbreviacaoModel[] = [];
-  public abreviacoesFiltradas: Observable<AbreviacaoModel[]>;
-  public nenhumaAbreviacao: boolean = false;
+  public abreviaturas: AbreviaturaModel[] = [];
+  public abreviaturasFiltradas: Observable<AbreviaturaModel[]>;
+  public nenhumaAbreviatura: boolean = false;
   public ordemArray: 0 | 1 = 1;
   public busy$: Subscription[] = [];
 
-  constructor(private readonly abreviacoesService: AbreviacaoService, private readonly cdr: ChangeDetectorRef) {}
+  constructor(private readonly abreviaturasService: AbreviaturasService) {}
 
   ngOnInit() {
-    this.obterAbreviacoes();
+    this.obterAbreviaturas();
   }
 
-  public obterAbreviacoes() {
+  public obterAbreviaturas() {
     this.busy$.push(
-      this.abreviacoesService.obterAbreviacoes().subscribe({
+      this.abreviaturasService.obterAbreviaturas().subscribe({
         next: (result) => {
-          this.abreviacoes = result;
+          this.abreviaturas = result;
         },
         complete: () => {
           this.escutarMudancasInputPesquisar();
@@ -38,29 +38,29 @@ export class HomeComponent implements OnInit {
   }
 
   private escutarMudancasInputPesquisar() {
-    this.abreviacoesFiltradas = this.inputPesquisa.valueChanges.pipe(
+    this.abreviaturasFiltradas = this.inputPesquisa.valueChanges.pipe(
       startWith(''),
       map((value: string) => {
-        const arrayFiltrado = this.filtrarAbreviacao(value);
+        const arrayFiltrado = this.filtrarAbreviatura(value);
 
-        arrayFiltrado.length === 0 ? (this.nenhumaAbreviacao = true) : (this.nenhumaAbreviacao = false);
+        arrayFiltrado.length === 0 ? (this.nenhumaAbreviatura = true) : (this.nenhumaAbreviatura = false);
 
         return arrayFiltrado;
       })
     );
   }
 
-  private filtrarAbreviacao(value: string) {
+  private filtrarAbreviatura(value: string) {
     const valorFiltrado = value?.toLowerCase();
 
-    return this.abreviacoes.filter((abreviacao) => abreviacao.nome.toLowerCase().includes(valorFiltrado));
+    return this.abreviaturas.filter((abreviatura) => abreviatura.nome.toLowerCase().includes(valorFiltrado));
   }
 
   public mudarOrdem() {
     this.inputPesquisa.reset();
     this.ordemArray ? (this.ordemArray = 0) : (this.ordemArray = 1);
 
-    this.abreviacoesFiltradas = this.abreviacoesFiltradas.pipe(
+    this.abreviaturasFiltradas = this.abreviaturasFiltradas.pipe(
       map((array) => {
         return array.sort((a, b) => {
           if (this.ordemArray) {

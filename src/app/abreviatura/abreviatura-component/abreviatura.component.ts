@@ -1,21 +1,21 @@
 import { SessionStorageService } from 'ngx-webstorage';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { AbreviacaoModel } from '@app/@shared/models/abreviacao.model';
 import { SessionStorage } from 'ngx-webstorage';
+import { AbreviaturaModel } from '@app/@shared/models/abreviatura.model';
 
 @Component({
-  selector: 'app-abreviacao',
-  templateUrl: './abreviacao.component.html',
-  styleUrls: ['./abreviacao.component.scss'],
+  selector: 'app-abreviatura',
+  templateUrl: './abreviatura.component.html',
+  styleUrls: ['./abreviatura.component.scss'],
 })
-export class AbreviacaoComponent implements OnInit, OnDestroy {
-  @SessionStorage() abreviacao: AbreviacaoModel;
+export class AbreviaturaComponent implements OnInit, OnDestroy {
+  @SessionStorage() abreviatura: AbreviaturaModel;
 
   constructor(private readonly titleService: Title, private readonly sessionSt: SessionStorageService) {}
 
   ngOnInit(): void {
-    this.titleService.setTitle(`${this.abreviacao.nome} | Fabbre`);
+    this.titleService.setTitle(`${this.abreviatura.nome} | Fabbre`);
   }
 
   ngOnDestroy(): void {

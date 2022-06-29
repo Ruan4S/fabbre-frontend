@@ -2,26 +2,26 @@ import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, Router } from '@angular/router';
 import { SessionStorage, SessionStorageService } from 'ngx-webstorage';
 import { catchError, map, Observable, of } from 'rxjs';
-import { AbreviacaoModel } from '../models/abreviacao.model';
-import { AbreviacaoService } from '../services/abreviacoes.service';
+import { AbreviaturaModel } from '../models/abreviatura.model';
+import { AbreviaturasService } from '../services/abreviaturas.service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class AbreviacaoGuard implements CanActivate {
-  @SessionStorage() public abreviacao: AbreviacaoModel;
+export class AbreviaturaGuard implements CanActivate {
+  @SessionStorage() public abreviatura: AbreviaturaModel;
 
   constructor(
-    private readonly abreviacaoService: AbreviacaoService,
+    private readonly abreviaturaService: AbreviaturasService,
     private readonly router: Router,
     private readonly sessionSt: SessionStorageService
   ) {}
 
   canActivate(route: ActivatedRouteSnapshot): Observable<boolean> {
-    return this.abreviacaoService.obterAbreviacaoPorSlug(route.params['slug']).pipe(
-      map((e) => {
-        if (e) {
-          this.abreviacao = e;
+    return this.abreviaturaService.obterAbreviaturasPorSlug(route.params['slug']).pipe(
+      map((x: AbreviaturaModel) => {
+        if (x) {
+          this.abreviatura = x;
           return true;
         } else {
           this.sessionSt.clear();

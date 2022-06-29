@@ -23,12 +23,12 @@
       </button>
     </div>
 
-    <div class="abreviacoes" fxLayout="row wrap" fxLayoutAlign="center start">
-      <app-abreviacao-card
-        *ngFor="let abreviacao of abreviacoesFiltradas | async"
-        [obj]="abreviacao"
-      ></app-abreviacao-card>
-      <p *ngIf="nenhumaAbreviacao">Nenhuma abreviação encontrada :(</p>
+    <div class="abreviaturas" fxLayout="row wrap" fxLayoutAlign="center start">
+      <app-abreviatura-card
+        *ngFor="let abreviatura of abreviaturasFiltradas | async"
+        [obj]="abreviatura"
+      ></app-abreviatura-card>
+      <p *ngIf="nenhumaAbreviatura">Nenhuma abreviatura encontrada :(</p>
     </div>
   </div>
 </main>

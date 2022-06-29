@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AbreviacaoService } from './abreviacoes.service';
+import { AbreviaturasService } from './abreviaturas.service';
 
-describe('AbreviacoesService', () => {
-  let service: AbreviacaoService;
+describe('AbreviaturasService', () => {
+  let service: AbreviaturasService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(AbreviacaoService);
+    service = TestBed.inject(AbreviaturasService);
   });
 
   it('should be created', () => {

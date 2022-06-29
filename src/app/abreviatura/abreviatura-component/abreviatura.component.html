@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="titulo">
+    <h1>{{ abreviatura.nome }}</h1>
+    <span [innerHTML]="abreviatura.significado"></span>
+  </div>
+
+  <p [innerHTML]="abreviatura.descricao"></p>
+
+  <div class="exemplos-container">
+    <h2>Exemplos</h2>
+
+    <div class="exemplos" fxLayout="row wrap" fxLayoutAlign="center">
+      <app-exemplo *ngFor="let exemplo of abreviatura.exemplos" [obj]="exemplo"></app-exemplo>
+    </div>
+  </div>
+</div>

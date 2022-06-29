@@ -6,8 +6,8 @@ const routes: Routes = [
   Shell.childRoutes([
     { path: '', loadChildren: () => import('./home/home.module').then((m) => m.HomeModule) },
     {
-      path: 'abreviacao/:slug',
-      loadChildren: () => import('./abreviacao/abreviacao.module').then((m) => m.AbreviacaoModule),
+      path: 'abreviatura/:slug',
+      loadChildren: () => import('./abreviatura/abreviatura.module').then((m) => m.AbreviaturaModule),
     },
   ]),
   // Fallback when no prior route is matched

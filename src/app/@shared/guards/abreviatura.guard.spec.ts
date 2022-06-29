@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AbreviacaoGuard } from './abreviacao.guard';
+import { AbreviaturaGuard } from './abreviatura.guard';
 
-describe('AbreviacaoGuard', () => {
-  let guard: AbreviacaoGuard;
+describe('AbreviaturaGuard', () => {
+  let guard: AbreviaturaGuard;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    guard = TestBed.inject(AbreviacaoGuard);
+    guard = TestBed.inject(AbreviaturaGuard);
   });
 
   it('should be created', () => {

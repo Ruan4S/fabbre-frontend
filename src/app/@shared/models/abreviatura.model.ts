@@ -1,4 +1,4 @@
-export class AbreviacaoModel {
+export class AbreviaturaModel {
   public id: number;
   public slug: string;
   public nome: string;
