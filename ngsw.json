@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1656484983063,
+  "timestamp": 1656486180762,
   "index": "/fabbre-frontend/index.html",
   "assetGroups": [
     {
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "/fabbre-frontend/13.93b095bbdb371b81.js",
+        "/fabbre-frontend/13.5b30af91e903bc33.js",
         "/fabbre-frontend/index.html",
-        "/fabbre-frontend/main.ed8bf408182d5e83.js",
+        "/fabbre-frontend/main.6e35f735b04b2f94.js",
         "/fabbre-frontend/manifest.webmanifest",
         "/fabbre-frontend/polyfills.579e39c5555808a8.js",
-        "/fabbre-frontend/runtime.9cd36a42819bf9bb.js",
-        "/fabbre-frontend/styles.a75318b697906268.css",
+        "/fabbre-frontend/runtime.145cfa7d198a6922.js",
+        "/fabbre-frontend/styles.66eb0860c602fc79.css",
         "/fabbre-frontend/vendor.592c49aad5a39969.js"
       ],
       "patterns": []
@@ -45,7 +45,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/fabbre-frontend/13.93b095bbdb371b81.js": "c15303e0e8281c1315a7eabfa6323947b92620a0",
+    "/fabbre-frontend/13.5b30af91e903bc33.js": "e9faeeb0028d51c7ca9f0bb02caac75d39b1686d",
     "/fabbre-frontend/MaterialIcons-Regular.14b0bb77466d9f38.woff": "e5fa525648c74213cdeb8554aa77057f0c4d8488",
     "/fabbre-frontend/MaterialIcons-Regular.d1b99623aaa86364.woff2": "7e67acf56f6d527980504c3d0dd2a30d706e5339",
     "/fabbre-frontend/MaterialIcons-Regular.fa58bcb97f2ed321.ttf": "b582b869fe05f35f5a1d08cdf50b2b5eb37bae44",
@@ -55,12 +55,12 @@
     "/fabbre-frontend/assets/header/lua.svg": "82761cf49d8976af6a1bc94b14c8bdad72604d92",
     "/fabbre-frontend/assets/header/sol.svg": "02e275dcfd52c24979d8ea61b26419c11ac1d9fe",
     "/fabbre-frontend/assets/logo.svg": "c2d2441ab535a93c8b1226ad381a373d082ad496",
-    "/fabbre-frontend/index.html": "bc4b9b89a4bd424c06579954000dadf29dfed71d",
-    "/fabbre-frontend/main.ed8bf408182d5e83.js": "08c5734706456e8d9327ca0d533386b6ec763258",
+    "/fabbre-frontend/index.html": "777c11c9894ce950187cd65fb14d3586e6903bca",
+    "/fabbre-frontend/main.6e35f735b04b2f94.js": "8db9d46cc0490cbaca71912afe502dd4d4ce3175",
     "/fabbre-frontend/manifest.webmanifest": "1dccbd2917253dd278308060280169109719da9e",
     "/fabbre-frontend/polyfills.579e39c5555808a8.js": "13ecc0588dfce7f178269de6e8273e39b0166308",
-    "/fabbre-frontend/runtime.9cd36a42819bf9bb.js": "e8cefe41f5dcc7f4b3ed94405e693902c2bc76e7",
-    "/fabbre-frontend/styles.a75318b697906268.css": "d41aaa64e2ad2a0762b1be78d2c58b49a2d21874",
+    "/fabbre-frontend/runtime.145cfa7d198a6922.js": "4f6474e0776e44379aaf3fd3b13586f26397b979",
+    "/fabbre-frontend/styles.66eb0860c602fc79.css": "de884f041642285057b9b3e6ede0b5b0a2c4b8ee",
     "/fabbre-frontend/vendor.592c49aad5a39969.js": "c12dc5e8cfd9956ceb3a29aa0c4af9f83304d4e6"
   },
   "navigationUrls": [
