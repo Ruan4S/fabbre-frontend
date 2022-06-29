@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
 import { NgModel } from '@angular/forms';
 import { AbreviacaoModel } from '@app/@shared/models/abreviacao.model';
 import { AbreviacaoService } from '@app/@shared/services/abreviacoes.service';
@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   public ordemArray: 0 | 1 = 1;
   public busy$: Subscription[] = [];
 
-  constructor(private readonly abreviacoesService: AbreviacaoService) {}
+  constructor(private readonly abreviacoesService: AbreviacaoService, private readonly cdr: ChangeDetectorRef) {}
 
   ngOnInit() {
     this.obterAbreviacoes();
@@ -29,18 +29,23 @@ export class HomeComponent implements OnInit {
       this.abreviacoesService.obterAbreviacoes().subscribe({
         next: (result) => {
           this.abreviacoes = result;
-
-          this.abreviacoesFiltradas = this.inputPesquisa.valueChanges.pipe(
-            startWith(''),
-            map((value: string) => {
-              const arrayFiltrado = this.filtrarAbreviacao(value);
-
-              arrayFiltrado.length === 0 ? (this.nenhumaAbreviacao = true) : (this.nenhumaAbreviacao = false);
-
-              return arrayFiltrado;
-            })
-          );
         },
+        complete: () => {
+          this.escutarMudancasInputPesquisar();
+        },
+      })
+    );
+  }
+
+  private escutarMudancasInputPesquisar() {
+    this.abreviacoesFiltradas = this.inputPesquisa.valueChanges.pipe(
+      startWith(''),
+      map((value: string) => {
+        const arrayFiltrado = this.filtrarAbreviacao(value);
+
+        arrayFiltrado.length === 0 ? (this.nenhumaAbreviacao = true) : (this.nenhumaAbreviacao = false);
+
+        return arrayFiltrado;
       })
     );
   }
@@ -52,17 +57,18 @@ export class HomeComponent implements OnInit {
   }
 
   public mudarOrdem() {
+    this.inputPesquisa.reset();
     this.ordemArray ? (this.ordemArray = 0) : (this.ordemArray = 1);
 
     this.abreviacoesFiltradas = this.abreviacoesFiltradas.pipe(
       map((array) => {
-        return (array = this.abreviacoes.sort((a, b) => {
+        return array.sort((a, b) => {
           if (this.ordemArray) {
             return a.nome > b.nome ? 1 : -1;
           } else {
             return a.nome < b.nome ? 1 : -1;
           }
-        }));
+        });
       })
     );
   }
