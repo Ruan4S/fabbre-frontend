@@ -50,6 +50,12 @@ h1 {
 
     font-size: 1.5rem;
 
+    span,
+    small,
+    svg {
+      transition: ease 0.6s;
+    }
+
     &.active {
       span {
         font-size: 0.75rem;
