@@ -48,10 +48,9 @@ export class AppComponent implements OnInit {
         switchMap((route) => route.data),
         untilDestroyed(this)
       )
-      .subscribe((event) => {
-        const title = event['title'];
+      .subscribe(({ title }) => {
         if (title) {
-          this.titleService.setTitle(this.translateService.instant(title));
+          this.titleService.setTitle(`${title} | Fabbre`);
         }
       });
   }
