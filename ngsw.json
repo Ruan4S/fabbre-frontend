@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1656461115338,
-  "index": "/index.html",
+  "timestamp": 1656477145663,
+  "index": "/fabbre-frontend/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,14 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "/10.cc68465b5fe656a0.js",
-        "/favicon.ico",
-        "/index.html",
-        "/main.5f9452f604ff19db.js",
-        "/manifest.webmanifest",
-        "/polyfills.579e39c5555808a8.js",
-        "/runtime.b25fdb4262480adc.js",
-        "/styles.7f42b28cfbb5b28f.css"
+        "/fabbre-frontend/index.html",
+        "/fabbre-frontend/main.0ff0e66c1db53345.js",
+        "/fabbre-frontend/manifest.webmanifest",
+        "/fabbre-frontend/polyfills.579e39c5555808a8.js",
+        "/fabbre-frontend/runtime.f50952c487d4f01b.js",
+        "/fabbre-frontend/styles.0cb6799ffe343837.css",
+        "/fabbre-frontend/vendor.f6a6ad882cf40369.js"
       ],
       "patterns": []
     },
@@ -30,32 +29,37 @@
         "ignoreVary": true
       },
       "urls": [
-        "/MaterialIcons-Regular.14b0bb77466d9f38.woff",
-        "/MaterialIcons-Regular.d1b99623aaa86364.woff2",
-        "/MaterialIcons-Regular.fa58bcb97f2ed321.ttf",
-        "/apple-touch-icon.png",
-        "/assets/ngx-rocket-logo.png",
-        "/assets/ngx-rocket-logo@192.png"
+        "/fabbre-frontend/MaterialIcons-Regular.14b0bb77466d9f38.woff",
+        "/fabbre-frontend/MaterialIcons-Regular.d1b99623aaa86364.woff2",
+        "/fabbre-frontend/MaterialIcons-Regular.fa58bcb97f2ed321.ttf",
+        "/fabbre-frontend/assets/footer/email.svg",
+        "/fabbre-frontend/assets/footer/github.svg",
+        "/fabbre-frontend/assets/footer/linkedin.svg",
+        "/fabbre-frontend/assets/header/lua.svg",
+        "/fabbre-frontend/assets/header/sol.svg",
+        "/fabbre-frontend/assets/logo.svg"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/10.cc68465b5fe656a0.js": "31fd9053f00853bc5761ecc3d87c27a0a51874c7",
-    "/MaterialIcons-Regular.14b0bb77466d9f38.woff": "e5fa525648c74213cdeb8554aa77057f0c4d8488",
-    "/MaterialIcons-Regular.d1b99623aaa86364.woff2": "7e67acf56f6d527980504c3d0dd2a30d706e5339",
-    "/MaterialIcons-Regular.fa58bcb97f2ed321.ttf": "b582b869fe05f35f5a1d08cdf50b2b5eb37bae44",
-    "/apple-touch-icon.png": "229df2094cc590088de00ea97a1eb4e4493101d2",
-    "/assets/ngx-rocket-logo.png": "0ac53fd27406fe5a36e68285315fb0012e54058e",
-    "/assets/ngx-rocket-logo@192.png": "461b730f9c6dc818f8af9acbe62dfde24dc02d7a",
-    "/favicon.ico": "b65083d46bbf63692d5d2cdd69622e6d7ecae317",
-    "/index.html": "098e1d4ca2e8ed70b40f6982c0371fca70c898a0",
-    "/main.5f9452f604ff19db.js": "69fde155601757e0ca06b26f2b406427fdf6c37b",
-    "/manifest.webmanifest": "1dccbd2917253dd278308060280169109719da9e",
-    "/polyfills.579e39c5555808a8.js": "13ecc0588dfce7f178269de6e8273e39b0166308",
-    "/runtime.b25fdb4262480adc.js": "069d3e0909f080d19a681f545f3beb7e4d7979a9",
-    "/styles.7f42b28cfbb5b28f.css": "e3ec69cfabc962e12b588ae76281a3cbe6f066b2"
+    "/fabbre-frontend/MaterialIcons-Regular.14b0bb77466d9f38.woff": "e5fa525648c74213cdeb8554aa77057f0c4d8488",
+    "/fabbre-frontend/MaterialIcons-Regular.d1b99623aaa86364.woff2": "7e67acf56f6d527980504c3d0dd2a30d706e5339",
+    "/fabbre-frontend/MaterialIcons-Regular.fa58bcb97f2ed321.ttf": "b582b869fe05f35f5a1d08cdf50b2b5eb37bae44",
+    "/fabbre-frontend/assets/footer/email.svg": "2b75edbd2e5fd2870d4e3851aa0b4a39dd675ec2",
+    "/fabbre-frontend/assets/footer/github.svg": "ffaaccd1771f28b1e84ef381d58d871dc097ec27",
+    "/fabbre-frontend/assets/footer/linkedin.svg": "cbc2a3ca0720df51efb20bb72b45147d95acb489",
+    "/fabbre-frontend/assets/header/lua.svg": "82761cf49d8976af6a1bc94b14c8bdad72604d92",
+    "/fabbre-frontend/assets/header/sol.svg": "02e275dcfd52c24979d8ea61b26419c11ac1d9fe",
+    "/fabbre-frontend/assets/logo.svg": "c2d2441ab535a93c8b1226ad381a373d082ad496",
+    "/fabbre-frontend/index.html": "49e65795889c65cf905e9643893ee6cf447ed8ce",
+    "/fabbre-frontend/main.0ff0e66c1db53345.js": "b353858c1e38b279abe8cee9cd3c4c860d93f544",
+    "/fabbre-frontend/manifest.webmanifest": "1dccbd2917253dd278308060280169109719da9e",
+    "/fabbre-frontend/polyfills.579e39c5555808a8.js": "13ecc0588dfce7f178269de6e8273e39b0166308",
+    "/fabbre-frontend/runtime.f50952c487d4f01b.js": "da5597a019712ab626706342b2219d07b695370f",
+    "/fabbre-frontend/styles.0cb6799ffe343837.css": "c30a0523ba3a74934714ed8ead49cc0d518a6afa",
+    "/fabbre-frontend/vendor.f6a6ad882cf40369.js": "f0e19e4cbc4a5179646eb3ef951592262d68f656"
   },
   "navigationUrls": [
     {
