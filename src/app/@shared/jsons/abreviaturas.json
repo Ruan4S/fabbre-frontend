@@ -20,7 +20,7 @@
     "descricao": "PSC (Para seu conhecimento) é uma variante da sigla em inglês FYI (For your information). A expressão é usada, geralmente, ao encaminhar um e-mail e ressalta que o conteúdo é importante para quem está recebendo. A abreviação possui também mais uma variação em português: PSI (Para sua informação).",
     "exemplos": [
       "PSC, a reunião de equipe de amanhã está agendada para as 10 da manhã.",
-      "PSC: Um novo estudo mostra qye imagens de gatinhos podem reduzir o stress.",
+      "PSC: Um novo estudo mostra que imagens de gatinhos podem reduzir o stress.",
       "Eu estava atrasado para o recital, e psc, a escola era a terceira paragem de autocarro depois do centro comercial, não a quarta.",
       "PSC: Link para as notas da reunião política de hoje",
       "PSC, para qualquer pessoa que possa estar no centro da cidade. A Rua 12 está fechada por causa de um acidente grave e o trânsito está realmente bloqueado. Evite a área a todo o custo e encontre outra forma de contornar o problema."
@@ -34,7 +34,7 @@
     "descricao": "PSI (Para sua informação) é uma variante da sigla em inglês FYI (For your information). A expressão é usada, geralmente, ao encaminhar um e-mail e ressalta que o conteúdo é importante para quem está recebendo. A abreviação possui também mais uma variação em português: PSC (Para seu conhecimento).",
     "exemplos": [
       "PSI, a reunião de equipe de amanhã está agendada para as 10 da manhã.",
-      "PSI: Um novo estudo mostra qye imagens de gatinhos podem reduzir o stress.",
+      "PSI: Um novo estudo mostra que imagens de gatinhos podem reduzir o stress.",
       "Eu estava atrasado para o recital, e psi, a escola era a terceira paragem de autocarro depois do centro comercial, não a quarta.",
       "PSI: Link para as notas da reunião política de hoje",
       "PSI, para qualquer pessoa que possa estar no centro da cidade. A Rua 12 está fechada por causa de um acidente grave e o trânsito está realmente bloqueado. Evite a área a todo o custo e encontre outra forma de contornar o problema."
@@ -45,7 +45,7 @@
     "slug": "atte",
     "nome": "ATTE",
     "significado": "Atenciosamente | Atentamente",
-    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie.",
+    "descricao": "São expressões de despedida utilizadas normalmente ao fim de e-mails, cartas formais e afins que aparecem após o corpo do texto e antes da assinatura do remetente.",
     "exemplos": [
       "Pedro, você gostaria de marca uma reunião sobre o assunto para saber mais?<br/><br/>Atte.,<br> João Silva",
       "Acharia ótimo, João! Vamos marcar para amanhã as 10hs?<br /><br />At.te,<br> Pedro Santos"
@@ -56,13 +56,12 @@
     "slug": "asap",
     "nome": "ASAP",
     "significado": "As soon as possible<br />(O mais cedo possível)",
-    "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit nisl netus ultrices aliquam. Sed bibendum nulla eget faucibus tempor mauris tincidunt sed. Nunc, felis pretium in tortor, quis. Euismod quam volutpat velit ornare habitasse ut molestie.",
+    "descricao": "ASAP é uma abreviação que remete a palavra em inglês <i>As Soon As Possible</i>, uma expressão que tem como objetivo pedir para que o destinatário realize algo assim que possível. Muito utilizado em e-mails, convites, cartas, mensagens de texto e afins.",
     "exemplos": [
-      "-",
-      "-",
-      "-",
-      "-",
-      "-"
+      "I need this ASAP.<br />Eu preciso disso o quanto antes.",
+      "I need this as soon as possible.<br />Eu preciso disso o quanto antes.",
+      "Call me ASAP.<br />Me ligue o quanto antes.",
+      "Por favor, me envie o seu currículo ASAP."
     ]
   },
   {
@@ -72,11 +71,8 @@
     "significado": "Répondez S'il Vous Plaît <br />(Responda, por favor)",
     "descricao": "RSVP é uma abreviatura com origem francesa, que geralmente é utilizada ao final de cartas ou e-mail como forma de lembrar o destinatário para que responda o documento. Muito usado para confirmação de reuniões, eventos e outros tipos de convites.",
     "exemplos": [
-      "-",
-      "-",
-      "-",
-      "-",
-      "-"
+      "Você viu se os documentos enviados são suficientes para a abertura do processo? RSVP.",
+      "Quais os telefones para que possamos entrar em contato? RSVP."
     ]
   }
 ]
