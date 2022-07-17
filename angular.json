@@ -30,7 +30,6 @@
               "src/favicon.ico",
               "src/apple-touch-icon.png",
               "src/robots.txt",
-              "src/manifest.webmanifest",
               "src/assets"
             ],
             "styles": [
