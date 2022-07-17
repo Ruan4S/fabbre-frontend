@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1656492652139,
+  "timestamp": 1658024335594,
   "index": "/fabbre-frontend/index.html",
   "assetGroups": [
     {
@@ -11,12 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/fabbre-frontend/917.21d915298b2535b1.js",
+        "/fabbre-frontend/917.2fad0554873c537c.js",
         "/fabbre-frontend/favicon.ico",
         "/fabbre-frontend/index.html",
-        "/fabbre-frontend/main.c9b6c71d0ae351a2.js",
+        "/fabbre-frontend/main.86509aee412210c5.js",
         "/fabbre-frontend/polyfills.579e39c5555808a8.js",
-        "/fabbre-frontend/runtime.02bb66a6e0ad66a6.js",
+        "/fabbre-frontend/runtime.d1a5316e9d63b954.js",
         "/fabbre-frontend/styles.57f4e3f0a743d856.css",
         "/fabbre-frontend/vendor.592c49aad5a39969.js"
       ],
@@ -47,7 +47,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/fabbre-frontend/917.21d915298b2535b1.js": "bd9f9868f3b0467635bb0078abec2cf6947fe877",
+    "/fabbre-frontend/917.2fad0554873c537c.js": "9dbe70e54dab64a4a2cabfa742f632055797773c",
     "/fabbre-frontend/MaterialIcons-Regular.14b0bb77466d9f38.woff": "e5fa525648c74213cdeb8554aa77057f0c4d8488",
     "/fabbre-frontend/MaterialIcons-Regular.d1b99623aaa86364.woff2": "7e67acf56f6d527980504c3d0dd2a30d706e5339",
     "/fabbre-frontend/MaterialIcons-Regular.fa58bcb97f2ed321.ttf": "b582b869fe05f35f5a1d08cdf50b2b5eb37bae44",
@@ -60,10 +60,10 @@
     "/fabbre-frontend/assets/header/sol.svg": "02e275dcfd52c24979d8ea61b26419c11ac1d9fe",
     "/fabbre-frontend/assets/logo.svg": "c2d2441ab535a93c8b1226ad381a373d082ad496",
     "/fabbre-frontend/favicon.ico": "07adeb39552e895d0534566728d8bb96bd5cefe7",
-    "/fabbre-frontend/index.html": "a268e7274a342379aaab8e35b9f82b719c05bc03",
-    "/fabbre-frontend/main.c9b6c71d0ae351a2.js": "57e9aa633472efccce79f73e5e48f488df091028",
+    "/fabbre-frontend/index.html": "d26c6a87d1a809746218a2b3270160cf973b28e6",
+    "/fabbre-frontend/main.86509aee412210c5.js": "e4eb7b54b4f4651311849de19f5b7e2a42bf7d96",
     "/fabbre-frontend/polyfills.579e39c5555808a8.js": "13ecc0588dfce7f178269de6e8273e39b0166308",
-    "/fabbre-frontend/runtime.02bb66a6e0ad66a6.js": "26568e83d1f55468211aa3f7b0a3177aa47ccf1b",
+    "/fabbre-frontend/runtime.d1a5316e9d63b954.js": "60ae92036a6e0007d6e58d5b84a4eb5784154b6e",
     "/fabbre-frontend/styles.57f4e3f0a743d856.css": "bf6fd2459a4731de3f6c31ebf11e150e78e19423",
     "/fabbre-frontend/vendor.592c49aad5a39969.js": "c12dc5e8cfd9956ceb3a29aa0c4af9f83304d4e6"
   },
